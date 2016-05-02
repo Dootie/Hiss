@@ -1,0 +1,65 @@
+<div id="hiss-top-container" class="hiss-top">
+    <ul class="hiss-navbar hiss-card-2 hiss-theme-primary-background">
+        <li class="hiss-hide-large hiss-black hiss-opennav hiss-left">
+          <a href="javascript:void(0);" onclick="hiss_togglebar()" class="hiss-theme-primary-background hiss-padding-16"><i class="material-icons">menu</i></a>
+        </li>
+        <li style="width:16%; min-width:250px;">
+            <a href="{website-url}" class="hiss-padding-16 hiss-theme-primary-background-hover hiss-left-align">{website-name}</a>
+        </li>
+        {left-tabs}
+        {right-tabs}
+    </ul>
+</div>
+<nav id="hiss-sidebar-container" class="hiss-sidenav hiss-theme-primary-background-dark hiss-card-2" style="width:0; z-index:5">
+  {hide-tabs}		
+</nav>
+<div class="hiss-overlay" onclick="hiss_togglebar()" style="cursor:pointer"></div>
+<script>
+    var open = false;
+    function hiss_togglebar(){
+        if(!open){
+            document.getElementById("main").style.position = "absolute";
+            document.getElementById("main").style.width = "100%";
+            $('#main').animate({
+                left: "30%"
+            }, 200);
+            
+            document.getElementsByClassName("hiss-top")[0].style.width = "100%";
+            $("#hiss-top-container").animate({
+                left: "50%"
+            }, 200);
+            
+            document.getElementsByClassName("hiss-sidenav")[0].style.width = "0%";
+            document.getElementsByClassName("hiss-sidenav")[0].style.display = "block";
+            $("#hiss-sidebar-container").animate({
+                width: "50%"
+            }, 200);
+            document.getElementsByClassName("hiss-overlay")[0].style.display = "block";
+            open = true;
+        }else{
+            document.getElementById("main").style.position = "absolute";
+            document.getElementById("main").style.width = "100%";
+            $('#main').animate({
+                left: "0%"
+            }, 200);
+            
+            document.getElementsByClassName("hiss-top")[0].style.width = "100%";
+            $("#hiss-top-container").animate({
+                left: "0%"
+            }, 200);
+            
+            $("#hiss-sidebar-container").animate({
+                width: "0%",
+                display: "none"
+            }, 200);
+            document.getElementsByClassName("hiss-overlay")[0].style.display = "none";
+            open = false;
+        }
+    }
+</script>
+<!-- explode -->
+<li><a class="hiss-padding-16 hiss-hide-small hiss-hide-medium hiss-theme-primary-background-light" href="{url}">{name}</a></li>
+<!-- explode -->
+<li><a class="hiss-padding-16 hiss-hide-small hiss-hide-medium hiss-theme-primary-background-light hiss-right" href="{url}">{name}</a></li>
+<!-- explode -->
+<a href="{url}" style="padding-top: 16px; padding-bottom: 16px;" class="hiss-theme-primary-background-light">{name}</a>

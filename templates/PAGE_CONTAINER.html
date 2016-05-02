@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+        <title>Hiss</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="data/img/favicon.png" />
+        <hiss:include css="hiss" />
+        <hiss:include css="style" />
+        <hiss:include css="hiss-theme" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <meta name="theme-color" content="#fff">
+    </head>
+    <body>
+        <div id="main">
+            <hiss:header />
+            <hiss:include template="{p}" />
+            <!-- Do not remove this div -->
+            <div class="hiss-center">
+                <a href="https://hiss.ga/">Copyright &copy; 2016 Hiss</a></center>
+            </div>
+            <!-- End -->
+        </div>
+        <hiss:navbar />
+        <hiss:include javascript="jquery.min" />
+        <hiss:include javascript="bootstrap.min" />
+        <hiss:include javascript="hiss" />
+        <hiss:extrajs />
+    </body>
+</html>

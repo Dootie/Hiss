@@ -1,0 +1,39 @@
+/* Text color */
+.hiss-theme-primary-text {color:#3f51b5 !important}
+.hiss-theme-primary-text-light {color:#b1b8e3 !important}
+.hiss-theme-primary-text-dark {color:#2d397f !important}
+
+.hiss-theme-secondary-text {color:#009688 !important}
+.hiss-theme-secondary-text-light {color:#6efff1 !important}
+.hiss-theme-secondary-text-dark {color:#00685d !important}
+
+.hiss-theme-tertiary-text {color:#9e9e9e !important}
+.hiss-theme-tertiary-text-light {color:#d8d8d8 !important}
+.hiss-theme-tertiary-text-dark {color:#6f6f6f !important}
+
+/* Background */
+.hiss-theme-primary-background {color:#fff !important; background-color:#3f51b5 !important}
+.hiss-theme-primary-background-light {color:#000 !important; background-color:#b1b8e3 !important}
+.hiss-theme-primary-background-dark {color:#fff !important; background-color:#2d397f !important}
+
+.hiss-theme-secondary-background {color:#fff !important; background-color:#009688 !important}
+.hiss-theme-secondary-background-light {color:#000 !important; background-color:#6efff1 !important}
+.hiss-theme-secondary-background-dark {color:#fff !important; background-color:#00685d !important}
+
+.hiss-theme-tertiary-background {color:#fff !important; background-color:#9e9e9e !important}
+.hiss-theme-tertiary-background-light {color:#000 !important; background-color:#d8d8d8 !important}
+.hiss-theme-tertiary-background-dark {color:#fff !important; background-color:#6f6f6f !important}
+
+/* Background hover - TODO */
+
+.hiss-theme-primary-background-hover:hover {color:#fff !important; background-color:#3f51b5 !important}
+.hiss-theme-primary-background-light-hover:hover {color:#000 !important; background-color:#b1b8e3 !important}
+.hiss-theme-primary-background-dark-hover:hover {color:#fff !important; background-color:#2d397f !important}
+
+.hiss-theme-secondary-background-hover:hover {color:#fff !important; background-color:#009688 !important}
+.hiss-theme-secondary-background-light-hover:hover {color:#000 !important; background-color:#6efff1 !important}
+.hiss-theme-secondary-background-dark-hover:hover {color:#fff !important; background-color:#00685d !important}
+
+.hiss-theme-tertiary-background-hover:hover {color:#fff !important; background-color:#9e9e9e !important}
+.hiss-theme-tertiary-background-light-hover:hover {color:#000 !important; background-color:#d8d8d8 !important}
+.hiss-theme-tertiary-background-dark-hover:hover {color:#fff !important; background-color:#6f6f6f !important}
